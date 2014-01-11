@@ -43,6 +43,15 @@ gem 'puma'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
+# 2014/1/4 add
+group :development, :test do
+#group :production do
+  gem 'capistrano', :require => false
+  gem 'capistrano-rails', :require => false
+  gem 'capistrano-rbenv', github: "capistrano/rbenv", :require => false
+  gem 'capistrano-bundler', :require => false
+  gem 'capistrano-puma', require: false
+end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
