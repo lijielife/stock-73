@@ -15,15 +15,17 @@ set :application, 'stock'
 #role :web, %w{ec2-54-199-136-43.ap-northeast-1.compute.amazonaws.com}
 #role :db,  %w{ec2-54-199-136-43.ap-northeast-1.compute.amazonaws.com}
 # 2014/1/7 modify
-server 'ec2-54-199-150-251.ap-northeast-1.compute.amazonaws.com', roles: %w(app), user: 'ec2-user', ssh_options: {
+ssh -i /home/owner/Documents/demo-key.pem ec2-user@ec2-54-199-140-79.ap-northeast-1.compute.amazonaws.com
+server 'ec2-54-199-140-79.ap-northeast-1.compute.amazonaws.com', roles: %w(app), user: 'ec2-user', ssh_options: {
 #  keys: [File.expand_path('~/.ssh/...')]
   keys: [File.expand_path('/home/owner/Documents/demo-key.pem')]
 }
-server 'ec2-54-199-150-251.ap-northeast-1.compute.amazonaws.com', roles: %w(web), user: 'ec2-user', ssh_options: {
+server 'ec2-54-199-140-79.ap-northeast-1.compute.amazonaws.com', roles: %w(web), user: 'ec2-user', ssh_options: {
 #  keys: [File.expand_path('~/.ssh/...')]
   keys: [File.expand_path('/home/owner/Documents/demo-key.pem')]
 }
-server 'ec2-54-199-150-251.ap-northeast-1.compute.amazonaws.com', roles: %w(db), user: 'ec2-user', ssh_options: {
+server 'ec2-54-199-140-79.ap-northeast-1.compute.amazonaws.com', roles: %w(web), user: 'ec2-user', ssh_options: {
+#server 'stock-production.cy5iyxtaokjt.ap-northeast-1.rds.amazonaws.com', roles: %w(db), user: 'ec2-user', ssh_options: {
 #  keys: [File.expand_path('~/.ssh/...')]
   keys: [File.expand_path('/home/owner/Documents/demo-key.pem')]
 }
