@@ -1,6 +1,6 @@
 set :application, 'stock'
 set :repo_url, 'git@github.com:peanuts2013/stock.git'
-
+set :branch, :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 #set :deploy_to, '/var/www/stokc'
@@ -12,16 +12,12 @@ set :scm, :git
 set :log_level, :info
 # set :pty, true
 
-set :linked_files, %w{config/database.yml}
+# set :linked_files, %w{config/database.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/assets}
 
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 # set :keep_releases, 5
 set :keep_releases, 20
-
-# 2014/1/12 add
-SSHKit.config.command_map[:rake]  = "bundle exec rake"
-SSHKit.config.command_map[:rails] = "bundle exec rails"
 
 # 2014/1/4 add
 require 'capistrano/puma'
