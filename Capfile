@@ -28,7 +28,7 @@ set :rbenv_ruby, '2.0.0-p353'
 require 'capistrano/bundler'
 # 2013/1/12 capistrano-rbenv-2.0.0 depends on sshkit (~> 1.2.0)
 # capistrano/rails/assets depends on sshkit (1.3.0)
-#require 'capistrano/rails/assets'
+require 'capistrano/rails/assets'
 require 'capistrano/rails/migrations'
 
 # Loads custom tasks from `lib/capistrano/tasks' if you have any defined.

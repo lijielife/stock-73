@@ -48,7 +48,8 @@ group :development, :test do
 #group :production do
   gem 'capistrano', :require => false
   gem 'capistrano-rails', :require => false
-  gem 'capistrano-rbenv', github: "capistrano/rbenv", :require => false
+#  gem 'capistrano-rbenv', github: "capistrano/rbenv", :require => false
+  gem 'capistrano-rbenv', :git => 'git@github.com:capistrano/rbenv.git', :ref => '67222bbce120323e422b051dcd167d8e2d3adbf0'
   gem 'capistrano-bundler', :require => false
   gem 'capistrano-puma', require: false
 end

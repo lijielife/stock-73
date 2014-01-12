@@ -1,6 +1,7 @@
 GIT
-  remote: git://github.com/capistrano/rbenv.git
+  remote: git@github.com:capistrano/rbenv.git
   revision: 67222bbce120323e422b051dcd167d8e2d3adbf0
+  ref: 67222bbce120323e422b051dcd167d8e2d3adbf0
   specs:
     capistrano-rbenv (2.0.0)
       capistrano (~> 3.0)
