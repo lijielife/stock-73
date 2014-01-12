@@ -7,9 +7,9 @@ set :migration_role, 'db'
 # Supports bulk-adding hosts to roles, the primary
 # server in each group is considered to be the first
 # unless any hosts have the primary property set.
-role :app, %w{ec2-54-199-150-251.ap-northeast-1.compute.amazonaws.com}
-role :web, %w{ec2-54-199-150-251.ap-northeast-1.compute.amazonaws.com}
-role :db,  %w{ec2-54-199-150-251.ap-northeast-1.compute.amazonaws.com}
+role :app, %w{ec2-54-199-140-79.ap-northeast-1.compute.amazonaws.com}
+role :web, %w{ec2-54-199-140-79.ap-northeast-1.compute.amazonaws.com}
+role :db,  %w{ec2-54-199-140-79.ap-northeast-1.compute.amazonaws.com}
 
 # Extended Server Syntax
 # ======================
@@ -19,7 +19,7 @@ role :db,  %w{ec2-54-199-150-251.ap-northeast-1.compute.amazonaws.com}
 # extended properties on the server.
 #2014/1/4 modify
 #server 'example.com', user: 'deploy', roles: %w{web app}, my_property: :my_value
-server 'ec2-54-199-150-251.ap-northeast-1.compute.amazonaws.com', user: 'ec2-user', roles: %w{web app db}
+server 'ec2-54-199-140-79.ap-northeast-1.compute.amazonaws.com', user: 'ec2-user', roles: %w{web app db}
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
