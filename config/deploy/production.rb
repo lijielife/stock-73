@@ -24,7 +24,7 @@ server 'ec2-54-199-140-79.ap-northeast-1.compute.amazonaws.com', roles: %w(web),
 #  keys: [File.expand_path('~/.ssh/...')]
   keys: [File.expand_path('/home/owner/Documents/demo-key.pem')]
 }
-server 'ec2-54-199-140-79.ap-northeast-1.compute.amazonaws.com', roles: %w(web), user: 'ec2-user', ssh_options: {
+server 'ec2-54-199-140-79.ap-northeast-1.compute.amazonaws.com', roles: %w(db), user: 'ec2-user', ssh_options: {
 #server 'stock-production.cy5iyxtaokjt.ap-northeast-1.rds.amazonaws.com', roles: %w(db), user: 'ec2-user', ssh_options: {
 #  keys: [File.expand_path('~/.ssh/...')]
   keys: [File.expand_path('/home/owner/Documents/demo-key.pem')]
