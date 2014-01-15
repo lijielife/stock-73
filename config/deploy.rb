@@ -28,6 +28,9 @@ set :ssh_options, {
   auth_methods: %w(publickey)
 }
 
+# 2013/1/15 add
+set :default_env, { path: "~/.rbenv/shims:~/.rbenv/bin:$PATH" }
+
 namespace :deploy do
 
   desc 'Restart application'
