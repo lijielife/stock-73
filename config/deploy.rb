@@ -30,8 +30,16 @@ set :ssh_options, {
 
 # 2013/1/15 add
 #set :default_env, { path: "~/.rbenv/shims:~/.rbenv/bin:$PATH" }
+#set :default_environment, {
+#  'PATH' => "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
+#}
+# rbenv setting
+require 'capistrano-rbenv'
+set :rbenv_ruby_version, '2.0.0-p353'
+
 set :default_environment, {
-  'PATH' => "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
+  'RBENV_ROOT' => "#{rbenv_path}",
+  'PATH' => "#{rbenv_path}/shims:#{rbenv_path}/bin:$PATH"
 }
 
 namespace :deploy do
