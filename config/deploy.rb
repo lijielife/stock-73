@@ -35,12 +35,18 @@ set :ssh_options, {
 #}
 # rbenv setting
 require 'capistrano-rbenv'
-set :rbenv_ruby_version, '2.0.0-p353'
+#set :rbenv_ruby_version, '2.0.0-p353'
+set :rbenv_ruby, '2.0.0-p353'
+set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
+set :rbenv_map_bins, %w{rake gem bundle ruby rails}
+set :rbenv_roles, :all # default value
+#set :rbenv_custom_path, '/usr/local/rbenv'
+#set :rbenv_custom_path, '/home/owner/.rbenv'
 
-set :default_environment, {
-  'RBENV_ROOT' => "#{rbenv_path}",
-  'PATH' => "#{rbenv_path}/shims:#{rbenv_path}/bin:$PATH"
-}
+#set :default_environment, {
+#  'RBENV_ROOT' => "#{rbenv_path}",
+#  'PATH' => "#{rbenv_path}/shims:#{rbenv_path}/bin:$PATH"
+#}
 
 namespace :deploy do
 

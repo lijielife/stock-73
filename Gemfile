@@ -45,14 +45,15 @@ gem 'puma'
 # gem 'capistrano', group: :development
 # 2014/1/4 add
 #group :development, :test do
-#group :production do
+group :production do
   gem 'capistrano', :require => false
   gem 'capistrano-rails', :require => false
 #  gem 'capistrano-rbenv', github: "capistrano/rbenv", :require => false
   gem 'capistrano-bundler', github: 'capistrano/bundler', :require => false
-  gem 'capistrano-rbenv', :git => 'git@github.com:capistrano/rbenv.git', :ref => '67222bbce120323e422b051dcd167d8e2d3adbf0', :require => false
+#  gem 'capistrano-rbenv', :git => 'git@github.com:capistrano/rbenv.git', :ref => '67222bbce120323e422b051dcd167d8e2d3adbf0', :require => false
+  gem 'capistrano-rbenv', "~> 2.0.1"
   gem 'capistrano-puma', require: false
-#end
+end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]

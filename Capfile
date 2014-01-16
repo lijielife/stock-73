@@ -20,6 +20,8 @@ require 'capistrano/deploy'
 # require 'capistrano/rvm'
 require 'capistrano/bundler'
 require 'capistrano/rbenv'
+#set :git => 'git@github.com:capistrano/rbenv.git'
+#set :ref => '67222bbce120323e422b051dcd167d8e2d3adbf0'
 #set :rbenv_type, :user
 #set :rbenv_type, :system
 #set :rbenv_custom_path, '/home/owner/.rbenv'
