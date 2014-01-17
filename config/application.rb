@@ -4,8 +4,9 @@ require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
-#Bundler.require(:default, Rails.env)
-Bundler.require(:default, :assets, Rails.env)
+Bundler.require(:default, Rails.env)
+#Bundler.require(*Rails.groups(:assets => %w(development test)))
+#Bundler.require(:default, :assets, Rails.env)
 
 module Stock
   class Application < Rails::Application
@@ -22,5 +23,6 @@ module Stock
     # config.i18n.default_locale = :de
     I18n.enforce_available_locales = false
     config.assets.initialize_on_precompile = false
+    config.assets.enabled = false
   end
 end
