@@ -1,7 +1,5 @@
 
 I18n.enforce_available_locales = false
-load 'deploy/assets'
-load 'config/deploy'
 # Load DSL and Setup Up Stages
 require 'capistrano/setup'
 
@@ -36,7 +34,6 @@ set :rbenv_ruby, '2.0.0-p353'
 require 'capistrano/rails/assets'
 require 'capistrano/rails/migrations'
 #require 'capistrano/rails'
-
 
 # Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
 Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }
