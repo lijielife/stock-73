@@ -44,8 +44,8 @@ gem 'puma'
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 # 2014/1/4 add
-#group :development, :test do
-group :production do
+group :development, :test do
+#group :production do
   gem 'capistrano', :require => false
   gem 'capistrano-rails', :require => false
 #  gem 'capistrano-rbenv', github: "capistrano/rbenv", :require => false
