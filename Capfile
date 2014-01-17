@@ -1,5 +1,7 @@
 
 I18n.enforce_available_locales = false
+load 'deploy/assets'
+load 'config/deploy'
 # Load DSL and Setup Up Stages
 require 'capistrano/setup'
 
