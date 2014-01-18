@@ -64,11 +64,17 @@ namespace :deploy do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
       # Here we can do anything such as:
       within release_path do
-#        execute :rake, 'cache:clear'
-        execute :rake, 'assets:precompile'
+        execute :rake, 'cache:clear'
+#        execute :rake, 'assets:precompile'
       end
     end
   end
+
+#after "deploy:update_code", :precompile_assets
+#  desc "precompile the assets"
+#  task :precompile_assets, :roles => :app do
+#    run "cd #{release_path} && RAILS_ENV=#{rails_env} bundle exec rake assets:precompile"
+#  end
 
   after :finishing, 'deploy:cleanup'
 
