@@ -38,8 +38,7 @@ require 'capistrano/rails/migrations'
 #require 'capistrano/rails'
 #require 'whenever/capistrano'
 
-#application.rb -> config.assets.enabled = true
-load 'deploy/assets'
+#load 'deploy/assets'
 
 # Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
 Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }
