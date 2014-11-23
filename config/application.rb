@@ -25,5 +25,6 @@ module Stock
     config.assets.initialize_on_precompile = false
     # assets pipeline on
     config.assets.enabled = true
+    config.assets.compile = true
   end
 end
