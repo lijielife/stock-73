@@ -1,5 +1,7 @@
 
 I18n.enforce_available_locales = false
+# SSHKit.conifg
+SSHKit.config.command_map[:rake] = 'bundle exec rake'
 # Load DSL and Setup Up Stages
 require 'capistrano/setup'
 
