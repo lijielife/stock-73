@@ -36,4 +36,4 @@ production:
   pool: 5
   username: root
   password: rootroot
-  host: localhost
+  host: stock-production.cy5iyxtaokjt.ap-northeast-1.rds.amazonaws.com
