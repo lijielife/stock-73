@@ -1,6 +1,6 @@
 set :stage, :staging
-set :rails_env, 'staging'
-set :migration_role, 'db'
+#set :rails_env, 'staging'
+#set :migration_role, 'db'
 
 # Simple Role Syntax
 # ==================

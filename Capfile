@@ -18,21 +18,21 @@ require 'capistrano/deploy'
 #   https://github.com/capistrano/rails/tree/master/migrations
 #
 # require 'capistrano/rvm'
-require 'capistrano/bundler'
 require 'capistrano/rbenv'
 #set :git => 'git@github.com:capistrano/rbenv.git'
 #set :ref => '67222bbce120323e422b051dcd167d8e2d3adbf0'
 #set :rbenv_type, :user
-#set :rbenv_type, :system
+set :rbenv_type, :system
 #set :rbenv_custom_path, '/home/owner/.rbenv'
-set :rbenv_custom_path, '/usr/local/rbenv'
+#set :rbenv_custom_path, '/usr/local/rbenv'
 set :rbenv_ruby, '2.0.0-p353'
 # require 'capistrano/chruby'
 # 2014/1/12 capistrano-rbenv-2.0.0 depends on sshkit (~> 1.2.0)
 # capistrano/rails/assets depends on sshkit (1.3.0)
 # 2014/1/17 modify
-#require 'capistrano/rails/assets'
-#require 'capistrano/rails/migrations'
+require 'capistrano/bundler'
+require 'capistrano/rails/assets'
+require 'capistrano/rails/migrations'
 #require 'capistrano/rails'
 #require 'whenever/capistrano'
 

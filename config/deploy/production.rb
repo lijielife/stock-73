@@ -1,6 +1,6 @@
 set :stage, :production
-set :rails_env, 'production'
-set :migration_role, 'db'
+#set :rails_env, 'production'
+#set :migration_role, 'db'
 
 set :application, 'stock'
 # 2014/1/4 comment out
