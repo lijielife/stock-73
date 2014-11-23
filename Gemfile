@@ -36,10 +36,10 @@ end
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Use puma as the app server
-gem 'puma'
+#gem 'puma'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
@@ -52,7 +52,7 @@ gem 'puma'
   gem 'capistrano-bundler', github: 'capistrano/bundler', :require => false
 #  gem 'capistrano-rbenv', :git => 'git@github.com:capistrano/rbenv.git', :ref => '67222bbce120323e422b051dcd167d8e2d3adbf0', :require => false
   gem 'capistrano-rbenv', "~> 2.0.1"
-  gem 'capistrano-puma', require: false
+# gem 'capistrano-puma', require: false
 #end
 
 # Use debugger
