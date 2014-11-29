@@ -1,5 +1,6 @@
 worker_processes 2
-listen '/tmp/unicorn.sock'
+#listen '/tmp/unicorn.sock'
+listen '/var/www/stock/shared/tmp/sockets/unicorn.sock'
 pid "/var/www/stock/shared/tmp/pids/unicorn.pid"
 
 stderr_path File.expand_path('unicorn.log', File.dirname(__FILE__) + '/../log')
