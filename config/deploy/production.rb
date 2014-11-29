@@ -1,5 +1,5 @@
 set :stage, :production
-et :rails_env, 'production'
+set :rails_env, 'production'
 #set :migration_role, 'db'
 
 set :application, 'stock'
