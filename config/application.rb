@@ -26,6 +26,6 @@ module Stock
     # assets pipeline on
     config.assets.enabled = true
     # Bootstrap
-    config.assets.paths << "#{Rails}/vender/assets/fonts"
+    #config.assets.paths << "#{Rails}/vender/assets/fonts"
   end
 end
