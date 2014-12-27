@@ -5,8 +5,9 @@
  *= require bootstrap
  *= require_self
  */
- /* extend bootstrap */
-.container-fluid {
+/* extend bootstrap */
+.container-fluid-margin {
+  @extend .container-fluid !optional;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
