@@ -38,6 +38,7 @@ require 'capistrano/rails/migrations'
 #require 'capistrano/rails'
 #require 'whenever/capistrano'
 
+# Capistranoでdeploy時にprecompileしない
 #load 'deploy/assets'
 
 # Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
