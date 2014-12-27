@@ -26,6 +26,9 @@ module Stock
     # assets pipeline on
     config.assets.enabled = true
     # Bootstrap
-    #config.assets.paths << "#{Rails}/vender/assets/fonts"
+    #config.assets.paths << "Rails.root.join("vendor", "assets")
+    config.assets.paths << "#{Rails}/vendor/assets/fonts"
+    config.assets.paths << "#{Rails}/vendor/assets/javascripts"
+    config.assets.paths << "#{Rails}/vendor/assets/stylesheets"
   end
 end

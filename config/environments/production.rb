@@ -22,6 +22,9 @@ Stock::Application.configure do
   # Disable Rails's static asset server (Apache or nginx will already do this).
   config.serve_static_assets = false
 
+  # アセットの依存関係と連結(true=連結)
+  config.assets.compress = true
+
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
