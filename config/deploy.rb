@@ -60,6 +60,16 @@ set :keep_releases, 5
 #}
 
 namespace :deploy do
+  # 2014/12/27 add
+  namespace :assets do
+
+    Rake::Task['deploy:assets:precompile'].clear_actions
+    
+    desc "Precompile assets"
+    task :precompile do
+      puts "-----nothing-------"
+    end
+  end
 
   desc 'Restart application'
   task :restart do
@@ -72,6 +82,7 @@ namespace :deploy do
   end
 #after :finishing, 'deploy:cleanup'
 end
+
 # 2014/12/06 add
 after 'deploy:publishing', 'deploy:restart'
 
