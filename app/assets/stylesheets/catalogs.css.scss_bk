@@ -1,0 +1,39 @@
+// Place all the styles related to the Catalogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/*
+ *= require bootstrap
+ *= require_self
+ */
+/* extend bootstrap */
+.container-fluid-margin {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: 15px;
+}
+
+//.container-fluid-margin_bk {
+//  @extend .container-fluid !optional;
+//  padding-right: 15px;
+//  padding-left: 15px;
+//  margin-right: auto;
+//  margin-left: 15px;
+//}
+ /* form */
+//
+//input.follow_submit {
+//  @extend .btn !optional;
+//  @extend .btn-large !optional;
+//  @extend .btn-info !optional;
+//  margin-top: 20px;
+//  margin-bottom: 20px;
+//}
+//input.create_submit {
+//  padding: 7px 15px;
+//  background-color: #000;
+//  color: #fff;
+//  border-style: none;
+//  margin-top: 20px;
+//  margin-bottom: 20px;
+//}
