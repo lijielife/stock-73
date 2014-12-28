@@ -80,6 +80,7 @@ namespace :deploy do
       # Your restart mechanism here, for example:
       # execute :touch, release_path.join('tmp/restart.txt')
   end
+
   after :restart, :clear_cache do
         on roles(:web), in: :groups, limit: 3, wait: 10 do
           # Here we can do anything such as:
@@ -88,6 +89,7 @@ namespace :deploy do
           end
         end
   end
+
 #after :finishing, 'deploy:cleanup'
 end
 
