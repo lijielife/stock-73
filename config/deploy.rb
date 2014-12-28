@@ -60,7 +60,7 @@ set :keep_releases, 5
 #}
 
 namespace :deploy do
-  # 2014/12/27 add -> 12/28 comment out
+  # 2014/12/27 add
   namespace :assets do
 
     Rake::Task['deploy:assets:precompile'].clear_actions
