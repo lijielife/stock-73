@@ -8,8 +8,8 @@
     <meta name="author" content="">
 
     <title><%= yield(:title) %> | Stock</title>
-    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true :debug => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true :debug => true %>
     <%= csrf_meta_tags %>
   </head>
 
@@ -47,3 +47,4 @@
     </div><!-- /.container -->
   </body>
 </html>
+<!-- 2014/12/28 13:21 update -->

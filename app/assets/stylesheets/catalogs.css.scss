@@ -7,12 +7,19 @@
  */
 /* extend bootstrap */
 .container-fluid-margin {
-//  @extend .container-fluid !optional;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: 15px;
 }
+
+//.container-fluid-margin_bk {
+//  @extend .container-fluid !optional;
+//  padding-right: 15px;
+//  padding-left: 15px;
+//  margin-right: auto;
+//  margin-left: 15px;
+//}
  /* form */
 //
 //input.follow_submit {
