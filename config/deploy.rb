@@ -81,14 +81,14 @@ namespace :deploy do
       # execute :touch, release_path.join('tmp/restart.txt')
   end
 
-  after :restart, :clear_cache do
-        on roles(:web), in: :groups, limit: 3, wait: 10 do
-          # Here we can do anything such as:
-          within release_path do
-            execute :rmdir, '-rf', release_path.join('tmp/cache')
-          end
-        end
-  end
+#  after :restart, :clear_cache do
+#        on roles(:web), in: :groups, limit: 3, wait: 10 do
+#          # Here we can do anything such as:
+#          within release_path do
+#            execute :rmdir, '-rf', release_path.join('tmp/cache')
+#          end
+#        end
+#  end
 
 # 2014/12/06 add
 after 'deploy:publishing', 'deploy:restart'
