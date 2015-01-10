@@ -39,7 +39,7 @@ require 'capistrano/rails/migrations'
 #require 'whenever/capistrano'
 
 # Capistranoでdeploy時にprecompileしない
-#load 'deploy/assets'
+load 'deploy/assets'
 
 # Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
 Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }
