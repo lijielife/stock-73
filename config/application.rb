@@ -30,5 +30,6 @@ module Stock
     config.assets.paths << "#{Rails}/vendor/assets/fonts"
     config.assets.paths << "#{Rails}/vendor/assets/javascripts"
     config.assets.paths << "#{Rails}/vendor/assets/stylesheets"
+    config.assets.precompile += %w(*.css *.js)
   end
 end
