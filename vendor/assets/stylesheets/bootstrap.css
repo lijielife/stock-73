@@ -1412,10 +1412,7 @@ pre code {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
-  margin-left: 15px;
-/* 2014/12/28 update
   margin-left: auto;
-*/
 }
 .row {
   margin-right: -15px;
