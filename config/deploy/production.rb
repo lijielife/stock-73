@@ -15,18 +15,18 @@ set :application, 'stock'
 #role :web, %w{ec2-54-199-136-43.ap-northeast-1.compute.amazonaws.com}
 #role :db,  %w{ec2-54-199-136-43.ap-northeast-1.compute.amazonaws.com}
 # 2014/1/7 modify
-server 'ec2-54-199-133-27.ap-northeast-1.compute.amazonaws.com', roles: %w(app), user: 'ec2-user', ssh_options: {
+server 'ec2-52-199-165-133.ap-northeast-1.compute.amazonaws.com', roles: %w(app), user: 'ec2-user', ssh_options: {
 #  keys: [File.expand_path('~/.ssh/...')]
-  keys: [File.expand_path('/home/owner/Documents/demo-key.pem')]
+  keys: [File.expand_path('/home/owner/Documents/demo-key2.pem')]
 }
-server 'ec2-54-199-133-27.ap-northeast-1.compute.amazonaws.com', roles: %w(web), user: 'ec2-user', ssh_options: {
+server 'ec2-52-199-165-133.ap-northeast-1.compute.amazonaws.com', roles: %w(web), user: 'ec2-user', ssh_options: {
 #  keys: [File.expand_path('~/.ssh/...')]
-  keys: [File.expand_path('/home/owner/Documents/demo-key.pem')]
+  keys: [File.expand_path('/home/owner/Documents/demo-key2.pem')]
 }
-server 'ec2-54-199-133-27.ap-northeast-1.compute.amazonaws.com', roles: %w(db), user: 'ec2-user', ssh_options: {
+server 'ec2-52-199-165-133.ap-northeast-1.compute.amazonaws.com', roles: %w(db), user: 'ec2-user', ssh_options: {
 #server 'stock-production.cy5iyxtaokjt.ap-northeast-1.rds.amazonaws.com', roles: %w(db), user: 'ec2-user', ssh_options: {
 #  keys: [File.expand_path('~/.ssh/...')]
-  keys: [File.expand_path('/home/owner/Documents/demo-key.pem')]
+  keys: [File.expand_path('/home/owner/Documents/demo-key2.pem')]
 }
 
 # Extended Server Syntax
@@ -36,7 +36,7 @@ server 'ec2-54-199-133-27.ap-northeast-1.compute.amazonaws.com', roles: %w(db), 
 # something that quacks like a hash can be used to set
 # extended properties on the server.
 #server 'stock.com', user: 'deploy', roles: %w{web app}, my_property: :my_value
-server 'ec2-54-199-133-27.ap-northeast-1.compute.amazonaws.com', user: 'ec2-user', roles: %w{web app db}
+server 'ec2-52-199-165-133.ap-northeast-1.compute.amazonaws.com', user: 'ec2-user', roles: %w{web app db}
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options

@@ -1,6 +1,16 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Group:</strong>
+  <%= @catalog.group %>
+</p>
+
+<p>
+  <strong>Manufacturer:</strong>
+  <%= @manufacturer_name %>
+</p>
+
+<p>
   <strong>Name:</strong>
   <%= @catalog.name %>
 </p>
@@ -8,6 +18,11 @@
 <p>
   <strong>Sum:</strong>
   <%= @catalog.sum %>
+</p>
+
+<p>
+  <strong>Use-by Date:</strong>
+  <%= @catalog.use_by_date %>
 </p>
 
 <%= link_to 'Edit', edit_catalog_path(@catalog) %> |

@@ -10,6 +10,9 @@ class CatalogsController < ApplicationController
   # GET /catalogs/1
   # GET /catalogs/1.json
   def show
+    # pendding 2016/02/10
+    @catalog = Catalog.find(params[:id])
+    @manufacturer_name = @catalog.manufacturer.manufacturer_name
   end
 
   # GET /catalogs/new
@@ -19,6 +22,7 @@ class CatalogsController < ApplicationController
 
   # GET /catalogs/1/edit
   def edit
+    @manufacturers = Manufacturer.all
   end
 
   # POST /catalogs
@@ -65,10 +69,11 @@ class CatalogsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_catalog
       @catalog = Catalog.find(params[:id])
+      @manufacturer_name = @catalog.manufacturer.manufacturer_name
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def catalog_params
-      params.require(:catalog).permit(:name, :sum)
+      params.require(:catalog).permit(:name, :sum, :group, :manufacturer_id, :use_by_date)
     end
 end

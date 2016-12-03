@@ -11,11 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140101141914) do
+ActiveRecord::Schema.define(version: 20160211014416) do
 
   create_table "catalogs", force: true do |t|
     t.string   "name"
     t.integer  "sum"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "group"
+    t.integer  "manufacturer_id"
+    t.date     "use_by_date"
+  end
+
+  create_table "manufacturers", force: true do |t|
+    t.string   "manufacturer_name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
