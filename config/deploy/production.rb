@@ -17,16 +17,16 @@ set :application, 'stock'
 # 2014/1/7 modify
 server 'ec2-52-199-165-133.ap-northeast-1.compute.amazonaws.com', roles: %w(app), user: 'ec2-user', ssh_options: {
 #  keys: [File.expand_path('~/.ssh/...')]
-  keys: [File.expand_path('/home/owner/Documents/demo-key2.pem')]
+  keys: [File.expand_path('/home/owner/Documents/demo-key.pem')]
 }
 server 'ec2-52-199-165-133.ap-northeast-1.compute.amazonaws.com', roles: %w(web), user: 'ec2-user', ssh_options: {
 #  keys: [File.expand_path('~/.ssh/...')]
-  keys: [File.expand_path('/home/owner/Documents/demo-key2.pem')]
+  keys: [File.expand_path('/home/owner/Documents/demo-key.pem')]
 }
 server 'ec2-52-199-165-133.ap-northeast-1.compute.amazonaws.com', roles: %w(db), user: 'ec2-user', ssh_options: {
 #server 'stock-production.cy5iyxtaokjt.ap-northeast-1.rds.amazonaws.com', roles: %w(db), user: 'ec2-user', ssh_options: {
 #  keys: [File.expand_path('~/.ssh/...')]
-  keys: [File.expand_path('/home/owner/Documents/demo-key2.pem')]
+  keys: [File.expand_path('/home/owner/Documents/demo-key.pem')]
 }
 
 # Extended Server Syntax
